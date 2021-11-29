@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const cheerio = require('cheerio');
-const port = process.env.MONGODB_URI;
+const port = process.env.MONGODB_URI || 3000;
 const axios = require('axios');
 const mongoose = require('mongoose')
 var Equipo = require('./mongoose').Equipo;
