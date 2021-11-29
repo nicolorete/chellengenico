@@ -2,11 +2,11 @@
   "name": "challengenico",
   "version": "1.0.0",
   "description": "Challenge nivel 1",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "npm run build",
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "keywords": [
     "Js"
