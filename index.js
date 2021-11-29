@@ -79,31 +79,31 @@ axios.get('https://www.futbolargentino.com/primera-division/tabla-de-posiciones'
        });
     });
 
-    cron.schedule('42 10 * * *', function(){
+    cron.schedule('* 34 17 * * *', function(){
         
-        // items.forEach(equipos => {    
+        items.forEach(equipos => {    
             
-        // let equipo = new Equipo({
-        //     posicion:equipos.posicion,            
-        //     escudo:equipos.escudo,
-        //     nombre:equipos.nombre,
-        //     pj:equipos.pj,
-        //     pg:equipos.pg,
-        //     pe:equipos.pe,
-        //     pp:equipos.pp,
-        //     gf:equipos.gf,
-        //     gc:equipos.gc,
-        //     diferencia:equipos.diferencia,
-        //     puntos:equipos.puntos
-        // })
-        // borrarNull();
-        // equipo.save(function(err){
-        //     if(err){
-        //         console.log(String(err))}
-        //     console.log("Cargados Correctamente")
+        let equipo = new Equipo({
+            posicion:equipos.posicion,            
+            escudo:equipos.escudo,
+            nombre:equipos.nombre,
+            pj:equipos.pj,
+            pg:equipos.pg,
+            pe:equipos.pe,
+            pp:equipos.pp,
+            gf:equipos.gf,
+            gc:equipos.gc,
+            diferencia:equipos.diferencia,
+            puntos:equipos.puntos
+        })
+        borrarNull();
+        equipo.save(function(err){
+            if(err){
+                console.log(String(err))}
+            console.log("Cargados Correctamente")
            
-        //     })
-        // });  
+            })
+        });  
             eliminarTabla();
             console.log('running a task every hour');
             
