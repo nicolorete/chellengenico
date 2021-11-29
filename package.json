@@ -1,0 +1,28 @@
+{
+  "name": "challengenico",
+  "version": "1.0.0",
+  "description": "Challenge nivel 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "npm run build",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "Js"
+  ],
+  "author": "Nicolas Coronel",
+  "license": "ISC",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "handlebars": "^4.7.7",
+    "mongodb": "^4.2.0",
+    "mongoose": "^6.0.13",
+    "node-cron": "^3.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

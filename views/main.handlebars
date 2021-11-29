@@ -1,0 +1,55 @@
+
+    <table class="contenedor content-table">
+      
+     
+        <thead>
+          <h1 class="contenedor titulo"> 
+          <img src="https://seeklogo.com/images/A/afa-logo-F862A464BF-seeklogo.com.png" alt="escudoAfa">Liga Profecional de Futbol
+          </h1>
+          <tr>
+            <th>Posicion</th>
+            <th></th>
+            <th>Equipo</th>
+            <th>PJ</th>
+            <th>PG</th>
+            <th>PE</th>
+            <th>PP</th>
+            <th class="columnas-hidden">GF</th>
+            <th class="columnas-hidden">CC</th>
+            <th class="columnas-hidden">Dif</th>
+            <th class="">Pts</th>
+          </tr>
+        </thead>
+        <tbody>
+       
+
+          <div>
+              {{#each data}}
+              
+          <tr>
+            <td>{{this.posicion}}</td>
+            <td class="escudo"><img src="{{escudo}}"></td>            
+            <td>{{nombre}}</td>
+            <td>{{pj}}</td>
+            <td>{{pg}}</td>
+            <td>{{pe}}</td>
+            <td>{{pp}}</td>
+            
+            
+            <td class="columnas-hidden">{{gf}}</td>
+            <td class="columnas-hidden">{{gc}}</td>
+            <td class="columnas-hidden">{{diferencia}}</td>
+            <td>{{puntos}}</td>
+            
+          </tr>
+            {{/each}}
+
+            </div>
+        </tbody>
+      </table>
+
+
+    
+
+
+

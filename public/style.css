@@ -1,0 +1,117 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px*/
+}
+
+* {
+    font-family: sans-serif; 
+  }
+  body {
+   
+    font-size: 1.6rem;
+    line-height: 1.3;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 50%;    
+    margin: 0 auto;
+}
+  .content-table {    
+    text-align: center;
+    border-collapse: collapse;   
+    /* margin: 25px 0;  */
+    font-size: 0.9em;
+    min-width: 400px;    
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  .titulo {
+    background-color: #7ECA99;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+  
+  }
+  .titulo img {
+    vertical-align: middle;
+    padding: 12px 12px;
+    width: 7%;
+  }
+  @media (max-width: 1234px) {
+    .titulo{
+        width: 100%;
+    }
+    .contenedor{
+      width: 100%;
+    }
+}
+  .content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 12px;
+  }
+  .escudo{
+    padding-left: none;
+    margin-left: none;
+  }
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(1) {
+    background-color: #f3f3f3;
+    font-weight: bold;
+    color: #009879;
+  }
+  .content-table tbody tr:nth-of-type(2) {
+    background-color: #f3f3f3;
+    font-weight: bold;
+    color: #009879;
+    
+  }
+  .content-table tbody tr:nth-of-type(3) {
+    background-color: #f3f3f3;
+    font-weight: bold;
+    color: #009879;
+  }
+
+  .content-table tbody tr:nth-of-type(26) {
+    background-color: #F79495;
+    font-weight: bold;
+  }
+  .content-table tbody tr:nth-of-type(25) {
+    background-color: #F79495;
+    font-weight: bold;
+  } .content-table tbody tr:nth-of-type(24) {
+    background-color: #F79495;
+    font-weight: bold;
+  } .content-table tbody tr:nth-of-type(23) {
+    background-color: #F79495;
+    font-weight: bold;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+
+ 
+  @media (max-width: 768px) {
+    .columnas-hidden{
+        visibility:hidden;
+        display: none;
+    }
+}
