@@ -79,7 +79,7 @@ axios.get('https://www.futbolargentino.com/primera-division/tabla-de-posiciones'
        });
     });
 
-    cron.schedule('* 34 17 * * *', function(){
+    cron.schedule('* 00 00 * * *', function(){
         
         items.forEach(equipos => {    
             
