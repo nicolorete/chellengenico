@@ -26,7 +26,7 @@ html {
     border-collapse: collapse;   
     /* margin: 25px 0;  */
     font-size: 0.9em;
-    min-width: 400px;    
+    /* min-width: 400px;     */
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   }
@@ -113,5 +113,14 @@ html {
     .columnas-hidden{
         visibility:hidden;
         display: none;
-    }
+    }   
+}
+@media (max-width: 316px) {
+  .titulo{
+      width: 100%;
+      
+  }
+  .content-table {
+    width: 100%;
+  }
 }
