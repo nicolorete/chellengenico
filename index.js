@@ -10,7 +10,7 @@ const handlebars = require('express-handlebars');
 var cron = require('node-cron');
 const uri = process.env.MONGODB_URI;
 
-const equiposArray = new Array();
+
 
 
 
@@ -32,6 +32,7 @@ app.get('/', async (req,res)=>{
     await mongoose.connect(mongodbUrl);
     Equipo.find({}).sort({posicion: 1}).lean()
     .exec(function(error,equiposList){
+        equiposArray = new Array();
         equiposList.forEach(eachEquipo=>{
             equiposArray.push(eachEquipo)
         })
