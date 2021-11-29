@@ -26,7 +26,7 @@ html {
     border-collapse: collapse;   
     /* margin: 25px 0;  */
     font-size: 0.9em;
-    /* min-width: 400px;     */
+    min-width: 400px;    
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   }
@@ -35,8 +35,10 @@ html {
     color: #ffffff;
     text-align: left;
     font-weight: bold;
-    border-radius: 5px 5px 0 0;
-  
+    border-radius: 5px 5px 0 0;text-align: center;
+    border-collapse: collapse;   
+    min-width: 400px;    
+    overflow: hidden;
   }
   .titulo img {
     vertical-align: middle;
@@ -115,9 +117,15 @@ html {
         display: none;
     }   
 }
-@media (max-width: 316px) {
+@media (max-width: 475px) {
   .titulo{
-      width: 100%;
+    text-align: center;
+    border-collapse: collapse;   
+    /* margin: 25px 0;  */
+    
+    min-width: 474px;    
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
       
   }
   .content-table {
