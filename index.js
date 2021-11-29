@@ -1,13 +1,14 @@
 const express = require('express');
 const app = express();
 const cheerio = require('cheerio');
-const port = process.env.MONGODB_URI || 3000;
+const port = process.env.PORT  || 3000;
 const axios = require('axios');
 const mongoose = require('mongoose')
 var Equipo = require('./mongoose').Equipo;
 const mongodbUrl = 'mongodb+srv://nico:nico123@cluster0.fjfgr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority' 
 const handlebars = require('express-handlebars');
 var cron = require('node-cron');
+const uri = process.env.MONGODB_URI;
 
 const equiposArray = new Array();
 
