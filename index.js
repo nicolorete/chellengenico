@@ -71,14 +71,14 @@ axios.get('https://www.futbolargentino.com/primera-division/tabla-de-posiciones'
     // console.log(items);
 
     
-    cron.schedule('57 11 * * *', function(){
+    cron.schedule('17 01 * * *', function(){
             
         Equipo.deleteMany({}, function(err) { 
            console.log('dalete meny') 
        });
     });
 
-    cron.schedule('58 11 * * *', function(){
+    cron.schedule('18 01 * * *', function(){
         
         items.forEach(equipos => {    
             
