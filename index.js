@@ -13,8 +13,6 @@ const uri = process.env.MONGODB_URI;
 
 
 
-
-
 // settings
 app.set('view engine', 'handlebars');
 app.engine('handlebars', handlebars({
@@ -73,14 +71,14 @@ axios.get('https://www.futbolargentino.com/primera-division/tabla-de-posiciones'
     // console.log(items);
 
     
-    cron.schedule('45 00 * * *', function(){
+    cron.schedule('57 11 * * *', function(){
             
         Equipo.deleteMany({}, function(err) { 
            console.log('dalete meny') 
        });
     });
 
-    cron.schedule('* 00 01 * * *', function(){
+    cron.schedule('58 11 * * *', function(){
         
         items.forEach(equipos => {    
             
@@ -105,7 +103,7 @@ axios.get('https://www.futbolargentino.com/primera-division/tabla-de-posiciones'
            
             })
         });  
-            eliminarTabla();
+            // eliminarTabla();
             console.log('running a task every hour');
             
       });
@@ -130,3 +128,4 @@ const eliminarTabla = async () => {
      
     });
 }
+
